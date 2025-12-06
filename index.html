@@ -113,10 +113,15 @@
                 </p>
             </div>
 
+            <!-- 
+                GRID STRUCTURE: 
+                - The first project (PECI) now spans all columns (lg:col-span-3), ensuring it sits on its own row.
+                - The remaining projects will flow below it, following the 3-column layout (lg:grid-cols-3).
+            -->
             <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
 
-                <!-- Project 1: PECI Dashboard (Background changed to bg-teal-600 to match placeholders) -->
-                <div class="project-card bg-white rounded-xl shadow-lg border border-gray-200">
+                <!-- Project 1: PECI Dashboard - MODIFIED to span 3 columns on large screens -->
+                <div class="project-card bg-white rounded-xl shadow-lg border border-gray-200 lg:col-span-3">
                     
                     <!-- Container for the video - set background to TEAL-600 to fill the letterbox space -->
                     <div class="bg-teal-600 rounded-t-xl overflow-hidden">
@@ -141,7 +146,7 @@
                     </div>
                 </div>
 
-                <!-- Project 2: Pakistan Electricity Review 2024. Source updated to placeholder since rb.jpg is now the profile picture. -->
+                <!-- Project 2: Pakistan Electricity Review 2024. This will start the second row (or third, depending on screen size) -->
                 <div class="project-card bg-white rounded-xl shadow-lg border border-gray-200">
                     <img
                         src="https://placehold.co/600x400/0d9488/f9fafb?text=Electricity+Review+2024"
@@ -182,7 +187,7 @@
                 </div>
                 
                 <!-- Publication 4: Thar Coal vs Hydropower -->
-                 <div class="project-card bg-white rounded-xl shadow-lg border border-gray-200">
+                <div class="project-card bg-white rounded-xl shadow-lg border border-gray-200">
                     <img
                         src="1695383198689.jpg"
                         alt="Thar Coal vs Hydropower Article Cover"
@@ -202,7 +207,7 @@
                 </div>
 
                 <!-- Publication 5: Capacity Payments Article (Font: Inter, Title Size: text-xl, Description Size: text-sm) -->
-                 <div class="project-card bg-white rounded-xl shadow-lg border border-gray-200">
+                <div class="project-card bg-white rounded-xl shadow-lg border border-gray-200">
                     <img
                         src="1757489890241.jpg"
                         alt="Capacity Payments Article Cover"
@@ -222,7 +227,7 @@
                 </div>
 
                 <!-- Publication 6: The Great Solar Rush -->
-                 <div class="project-card bg-white rounded-xl shadow-lg border border-gray-200">
+                <div class="project-card bg-white rounded-xl shadow-lg border border-gray-200">
                     <img
                         src="Gemini_Generated_Image_2u6zbs2u6zbs2u6z.jpg"
                         alt="The Great Solar Rush in Pakistan Cover"
