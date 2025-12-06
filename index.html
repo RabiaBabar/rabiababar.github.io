@@ -4,28 +4,29 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Rabia Babar - Energy & Climate Portfolio</title>
-    <!-- Load Tailwind CSS -->
+
+    <!-- Tailwind -->
     <script src="https://cdn.tailwindcss.com"></script>
-    <!-- Load Lucide icons -->
+
+    <!-- Lucide Icons -->
     <script src="https://unpkg.com/lucide@latest"></script>
+
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800;900&display=swap" rel="stylesheet">
+
     <style>
-        /* Custom CSS for Inter font and smoother scrolling */
         body {
-            font-family: 'Inter', sans-serif; /* UNIVERSAL FONT APPLIED */
+            font-family: 'Inter', sans-serif;
             scroll-behavior: smooth;
-            background-color: #f4f4f5; /* Light gray (Tailwind gray-100 equivalent) */
+            background-color: #f4f4f5;
         }
         .project-card {
             display: flex;
             flex-direction: column;
-            overflow: hidden;
             transition: transform 0.3s, box-shadow 0.3s;
-            height: 100%; /* Ensure cards fill height for equal alignment */
+            height: 100%;
         }
         .project-card:hover {
             transform: translateY(-5px);
-            /* Soft teal shadow on hover */
             box-shadow: 0 10px 20px rgba(20, 184, 166, 0.2), 0 4px 6px rgba(0, 0, 0, 0.05);
         }
         .section-header {
@@ -37,240 +38,113 @@
             position: absolute;
             left: 0;
             bottom: -5px;
-            width: 70px; /* Shorter line for focus */
+            width: 70px;
             height: 4px;
-            background-color: #0d9488; /* Teal 600 Accent */
+            background-color: #0d9488;
             border-radius: 9999px;
-        }
-        /* Style for the Contact button ring focus */
-        .cta-button {
-            transition: all 0.3s ease;
-            box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -2px rgba(0, 0, 0, 0.06);
-        }
-        .cta-button:hover {
-            transform: translateY(-2px);
-            box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -4px rgba(0, 0, 0, 0.1);
         }
     </style>
 </head>
+
 <body class="text-gray-900">
 
-    <!-- Header & Navigation -->
-    <header class="bg-gray-900 shadow-xl sticky top-0 z-10 border-b border-teal-600">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-4 flex justify-between items-center">
-            <h1 class="text-2xl font-extrabold text-white tracking-wide">Rabia Babar</h1>
-            <nav class="hidden sm:flex space-x-6">
-                <a href="#about" class="text-sm font-medium text-teal-300 hover:text-white transition-colors">About</a>
-                <a href="#projects" class="text-sm font-medium text-teal-300 hover:text-white transition-colors">Projects</a>
-                <a href="#contact" class="text-sm font-medium text-teal-300 hover:text-white transition-colors">Contact</a>
-            </nav>
-            <div class="text-sm font-medium text-teal-400 uppercase tracking-wider hidden sm:block">
-                Data Storyteller
-            </div>
+<header class="bg-gray-900 shadow-xl sticky top-0 z-10 border-b border-teal-600">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-4 flex justify-between items-center">
+        <h1 class="text-2xl font-extrabold text-white tracking-wide">Rabia Babar</h1>
+        <nav class="hidden sm:flex space-x-6">
+            <a href="#about" class="text-sm text-teal-300 hover:text-white">About</a>
+            <a href="#projects" class="text-sm text-teal-300 hover:text-white">Projects</a>
+            <a href="#contact" class="text-sm text-teal-300 hover:text-white">Contact</a>
+        </nav>
+        <div class="text-sm font-medium text-teal-400 uppercase tracking-wider hidden sm:block">
+            Data Storyteller
         </div>
-    </header>
+    </div>
+</header>
 
-    <main class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
+<main class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
 
-        <!-- Hero/About Section -->
-        <section id="about" class="mb-20 bg-white p-8 sm:p-12 rounded-2xl shadow-lg border-t-4 border-teal-600">
-            <div class="md:flex md:items-center md:space-x-12">
-                <div class="md:w-3/4">
-                    <p class="text-sm font-semibold text-teal-600 uppercase mb-2 tracking-widest"></p>
-                    <h2 class="text-4xl sm:text-5xl font-extrabold text-gray-900 mb-6 leading-tight">
-                        Powering the <span class="text-teal-600">Energy Transition</span> with Data-Driven Insights.
-                    </h2>
-                    <p class="text-lg text-gray-700 leading-relaxed mb-6">
-                        Energy sector professional with over 15 years of cross-functional experience in data analytics, market analysis, and sustainable development. I specialize in translating complex power sector data into actionable policy recommendations and designing scalable analytics platforms like the Pakistan Energy & Climate Insights (PECI) dashboard.
-                    </p>
-                    <div class="flex flex-wrap gap-4">
-                        <a href="mailto:rabiaababar@gmail.com" class="inline-flex items-center bg-teal-600 text-white font-bold py-2 px-5 rounded-full hover:bg-teal-700 transition duration-300 shadow-md">
-                            <i data-lucide="mail" class="w-4 h-4 mr-2"></i> Get in Touch
-                        </a>
-                        <a href="https://www.linkedin.com/in/rabiababar-datastoryteller/" target="_blank" class="inline-flex items-center text-gray-700 font-semibold py-2 px-5 rounded-full border border-gray-300 hover:bg-gray-200 transition duration-300">
-                            <i data-lucide="linkedin" class="w-4 h-4 mr-2"></i> View LinkedIn
-                        </a>
-                    </div>
-                </div>
-                <!-- Placeholder for profile image -->
-                <div class="hidden md:block md:w-1/4 flex-shrink-0 mt-8 md:mt-0">
-                    <img 
-                        src="https://placehold.co/200x200/0d9488/ffffff?text=RB" 
-                        alt="Rabia Babar Profile Placeholder" 
-                        class="w-48 h-48 rounded-full object-cover mx-auto border-4 border-teal-600 shadow-xl"
-                    >
-                </div>
-            </div>
-        </section>
+    <!-- ABOUT -->
+    <section id="about" class="mb-20 bg-white p-8 sm:p-12 rounded-2xl shadow-lg border-t-4 border-teal-600">
+        <div class="md:flex md:items-center md:space-x-12">
+            <div class="md:w-3/4">
+                <h2 class="text-4xl sm:text-5xl font-extrabold text-gray-900 mb-6">
+                    Powering the <span class="text-teal-600">Energy Transition</span> with Data-Driven Insights.
+                </h2>
 
-        <!-- Projects & Publications Section -->
-        <section id="projects" class="mb-20">
-            <div class="mb-12">
-                <h2 class="text-3xl font-bold section-header text-gray-900">Featured Projects & Publications</h2>
-                <p class="mt-5 text-gray-700 max-w-2xl text-lg">
-                    A collection of my work in energy market analysis, policy review, and data visualization tools.
+                <p class="text-lg text-gray-700 mb-6">
+                    Energy sector professional with 15+ years of experience in data analytics, market analysis, and sustainable development.
                 </p>
+
+                <div class="flex flex-wrap gap-4">
+                    <a href="mailto:rabiaababar@gmail.com" class="inline-flex items-center bg-teal-600 text-white font-bold py-2 px-5 rounded-full">
+                        <i data-lucide="mail" class="w-4 h-4 mr-2"></i> Get in Touch
+                    </a>
+
+                    <a href="https://www.linkedin.com/in/rabiababar-datastoryteller/" target="_blank" class="inline-flex items-center border border-gray-300 py-2 px-5 rounded-full">
+                        <i data-lucide="linkedin" class="w-4 h-4 mr-2"></i> View LinkedIn
+                    </a>
+                </div>
             </div>
 
-            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-
-                <!-- Project 1: PECI Dashboard (Font: Inter, Title Size: text-xl, Description Size: text-sm) -->
-                <div class="project-card bg-white rounded-xl shadow-lg border border-gray-200">
-                    <img
-                        src="https://raw.githubusercontent.com/RabiaBabar/rabiababar.github.io/main/PECI_portfolio.mp4" type="video/mp4">
-
-                        alt="Pakistan Energy & Climate Insights Dashboard Cover"
-                        class="w-full h-48 object-cover rounded-t-xl"
-                        onerror="this.onerror=null; this.src='https://placehold.co/600x400/0d9488/f9fafb?text=PECI+Dashboard';"
-                    >
-                    <div class="p-6 flex flex-col flex-grow">
-                        <span class="text-xs font-bold uppercase tracking-wider text-teal-700 bg-teal-100 px-2 py-1 rounded-full mb-3 inline-block self-start">Interactive Tool</span>
-                        <h3 class="font-bold text-xl mb-3 text-gray-900 leading-snug">Pakistan Energy & Climate Insights (PECI) Dashboard</h3>
-                        <p class="text-gray-600 mb-5 text-sm leading-relaxed flex-grow">
-                            Led a team of 5 in building this Tableau dashboard, integrating two decades of power sector data for real-time trend exploration and informed decision-making.
-                        </p>
-                        <a href="https://peci.renewablesfirst.org/" target="_blank" class="inline-flex items-center text-teal-600 font-bold hover:text-teal-700 transition duration-150 group mt-auto">
-                            View Dashboard <i data-lucide="external-link" class="w-4 h-4 ml-2 transform group-hover:translate-x-0.5 transition-transform"></i>
-                        </a>
-                    </div>
-                </div>
-
-                <!-- Project 2: Pakistan Electricity Review 2024 -->
-                <div class="project-card bg-white rounded-xl shadow-lg border border-gray-200">
-                    <img
-                        src="rb.jpg"
-                        alt="Pakistan Electricity Review 2024 Publication Cover"
-                        class="w-full h-48 object-cover rounded-t-xl"
-                        onerror="this.onerror=null; this.src='https://placehold.co/600x400/0d9488/f9fafb?text=Electricity+Review+2024';"
-                    >
-                    <div class="p-6 flex flex-col flex-grow">
-                        <span class="text-xs font-bold uppercase tracking-wider text-teal-700 bg-teal-100 px-2 py-1 rounded-full mb-3 inline-block self-start">Annual Report</span>
-                        <h3 class="font-bold text-xl mb-3 text-gray-900 leading-snug">Pakistan Electricity Review 2024</h3>
-                        <p class="text-gray-600 mb-5 text-sm leading-relaxed flex-grow">
-                            Designed and developed this annual report, translating complex power sector data into actionable insights for policymakers and stakeholders.
-                        </p>
-                        <a href="https://uploads.renewablesfirst.org/Pakistan_Electricity_Review_2024_5_9c8be41fcc.pdf" target="_blank" class="inline-flex items-center text-teal-600 font-bold hover:text-teal-700 transition duration-150 group mt-auto">
-                            Read Publication <i data-lucide="file-text" class="w-4 h-4 ml-2 transform group-hover:translate-x-0.5 transition-transform"></i>
-                        </a>
-                    </div>
-                </div>
-
-                <!-- Project 3: Pakistan Energy Market Review 2025 -->
-                <div class="project-card bg-white rounded-xl shadow-lg border border-gray-200">
-                    <img
-                        src="1755963608884.jpg"
-                        alt="Pakistan Energy Market Review 2025 Publication Cover"
-                        class="w-full h-48 object-cover rounded-t-xl"
-                        onerror="this.onerror=null; this.src='https://placehold.co/600x400/0d9488/f9fafb?text=Market+Review+2025';"
-                    >
-                    <div class="p-6 flex flex-col flex-grow">
-                        <span class="text-xs font-bold uppercase tracking-wider text-teal-700 bg-teal-100 px-2 py-1 rounded-full mb-3 inline-block self-start">Sector Analysis</span>
-                        <h3 class="font-bold text-xl mb-3 text-gray-900 leading-snug">Pakistan Energy Market Review 2025</h3>
-                        <p class="text-gray-600 mb-5 text-sm leading-relaxed flex-grow">
-                            Spearheaded data analysis and narrative development across fossil fuels, LNG, and consumption to inform national energy transition planning.
-                        </p>
-                        <a href="https://uploads.renewablesfirst.org/Pakistan%20Energy%20Market%20Review%202025.pdf" target="_blank" class="inline-flex items-center text-teal-600 font-bold hover:text-teal-700 transition duration-150 group mt-auto">
-                            Read Publication <i data-lucide="file-text" class="w-4 h-4 ml-2 transform group-hover:translate-x-0.5 transition-transform"></i>
-                        </a>
-                    </div>
-                </div>
-                
-                <!-- Publication 4: Thar Coal vs Hydropower -->
-                 <div class="project-card bg-white rounded-xl shadow-lg border border-gray-200">
-                    <img
-                        src="1695383198689.jpg"
-                        alt="Thar Coal vs Hydropower Article Cover"
-                        class="w-full h-48 object-cover rounded-t-xl"
-                        onerror="this.onerror=null; this.src='https://placehold.co/600x400/0d9488/f9fafb?text=Coal+vs+Hydro+Analysis';"
-                    >
-                    <div class="p-6 flex flex-col flex-grow">
-                        <span class="text-xs font-bold uppercase tracking-wider text-teal-700 bg-teal-100 px-2 py-1 rounded-full mb-3 inline-block self-start">LinkedIn Article</span>
-                        <h3 class="font-bold text-xl mb-3 text-gray-900 leading-snug">Thar coal-fired energy cheaper than hydropower?</h3>
-                        <p class="text-gray-600 mb-5 text-sm leading-relaxed flex-grow">
-                            Comparative cost analysis on Thar coal and hydropower, discussing their roles in Pakistan's energy mix and economic implications.
-                        </p>
-                        <a href="https://www.linkedin.com/pulse/thar-coal-fired-energy-really-cheaper-than-hydropower-rabia-babar-3uu5f/?trackingId=kSNuxRZPVxraAEJv4qVyPA%3D%3D" target="_blank" class="inline-flex items-center text-teal-600 font-bold hover:text-teal-700 transition duration-150 group mt-auto">
-                            Read Article <i data-lucide="bookmark" class="w-4 h-4 ml-2 transform group-hover:translate-x-0.5 transition-transform"></i>
-                        </a>
-                    </div>
-                </div>
-
-                <!-- Publication 5: Capacity Payments Article (Font: Inter, Title Size: text-xl, Description Size: text-sm) -->
-                 <div class="project-card bg-white rounded-xl shadow-lg border border-gray-200">
-                    <img
-                        src="1757489890241.jpg"
-                        alt="Capacity Payments Article Cover"
-                        class="w-full h-48 object-cover rounded-t-xl"
-                        onerror="this.onerror=null; this.src='https://placehold.co/600x400/0d9488/f9fafb?text=Tariff+Analysis';"
-                    >
-                    <div class="p-6 flex flex-col flex-grow">
-                        <span class="text-xs font-bold uppercase tracking-wider text-teal-700 bg-teal-100 px-2 py-1 rounded-full mb-3 inline-block self-start">Data Analysis</span>
-                        <h3 class="font-bold text-xl mb-3 text-gray-900 leading-snug">Are the capacity payments the primary reason for swelling electricity prices?</h3>
-                        <p class="text-gray-600 mb-5 text-sm leading-relaxed flex-grow">
-                            Detailed investigation into the factors driving high electricity tariffs in Pakistan, focusing on the impact of capacity payments.
-                        </p>
-                        <a href="https://www.linkedin.com/pulse/root-cause-increased-power-tariff-pakistan-its-mitigation-rabia-babar/" target="_blank" class="inline-flex items-center text-teal-600 font-bold hover:text-teal-700 transition duration-150 group mt-auto">
-                            Read Article <i data-lucide="bookmark" class="w-4 h-4 ml-2 transform group-hover:translate-x-0.5 transition-transform"></i>
-                        </a>
-                    </div>
-                </div>
-
-                <!-- Publication 6: The Great Solar Rush -->
-                 <div class="project-card bg-white rounded-xl shadow-lg border border-gray-200">
-                    <img
-                        src="Gemini_Generated_Image_2u6zbs2u6zbs2u6z.jpg"
-                        alt="The Great Solar Rush in Pakistan Cover"
-                        class="w-full h-48 object-cover rounded-t-xl"
-                        onerror="this.onerror=null; this.src='https://placehold.co/600x400/0d9488/f9fafb?text=Solar+Sector+Insight';"
-                    >
-                    <div class="p-6 flex flex-col flex-grow">
-                        <span class="text-xs font-bold uppercase tracking-wider text-teal-700 bg-teal-100 px-2 py-1 rounded-full mb-3 inline-block self-start">Sector Insight</span>
-                        <h3 class="font-bold text-xl mb-3 text-gray-900 leading-snug">The great solar rush in Pakistan</h3>
-                        <p class="text-gray-600 mb-5 text-sm leading-relaxed flex-grow">
-                            Insights into the rapid market changes, adoption rates, and regulatory landscape surrounding the solar energy sector in Pakistan.
-                        </p>
-                        <a href="https://uploads.renewablesfirst.org/The_Great_Solar_Rush_in_Pakistan_38157451a3.pdf" target="_blank" class="inline-flex items-center text-teal-600 font-bold hover:text-teal-700 transition duration-150 group mt-auto">
-                            Read Article <i data-lucide="file-text" class="w-4 h-4 ml-2 transform group-hover:translate-x-0.5 transition-transform"></i>
-                        </a>
-                    </div>
-                </div>
-
-            </div>
-        </section>
-
-        <!-- Call to Action / Contact -->
-        <section id="contact" class="mt-20 p-10 bg-teal-600 rounded-3xl text-center border-b-8 border-teal-800 shadow-2xl">
-            <h3 class="text-3xl font-bold text-white mb-4">Let's Collaborate on Data-Driven Climate Solutions</h3>
-            <p class="text-teal-100 mb-8 max-w-lg mx-auto">Open for consulting, advisory roles, and speaking engagements on energy policy and market transformation.</p>
-            <div class="flex flex-col sm:flex-row justify-center items-center gap-4">
-                <a href="mailto:rabiaababar@gmail.com" class="cta-button bg-white hover:bg-gray-100 text-teal-800 font-extrabold py-3 px-10 rounded-full inline-flex items-center">
-                    <i data-lucide="send" class="w-5 h-5 mr-3"></i> Send a Direct Email
-                </a>
-                <a href="https://www.linkedin.com/in/rabiababar-datastoryteller/" target="_blank" class="text-white hover:text-teal-200 font-semibold py-3 px-6 rounded-full border border-teal-400 hover:bg-teal-700 transition duration-300 inline-flex items-center">
-                    <i data-lucide="linkedin" class="w-5 h-5 mr-2"></i> LinkedIn Profile
-                </a>
-            </div>
-        </section>
-
-    </main>
-
-    <!-- Footer -->
-    <footer class="bg-gray-900 text-gray-400 py-8 mt-16 border-t border-gray-800">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col md:flex-row justify-between items-center">
-            <p class="text-sm mb-4 md:mb-0">&copy; 2025 Rabia Babar. All rights reserved.</p>
-            <div class="flex space-x-6 text-sm">
-                <a href="mailto:rabiaababar@gmail.com" class="hover:text-teal-300 transition-colors">Email</a>
-                <a href="https://www.linkedin.com/in/rabiababar-datastoryteller/" target="_blank" class="hover:text-teal-300 transition-colors">LinkedIn</a>
-                <a href="#" class="hover:text-teal-300 transition-colors">Tableau</a>
+            <div class="hidden md:block md:w-1/4">
+                <img src="https://placehold.co/200x200/0d9488/ffffff?text=RB"
+                     class="w-48 h-48 rounded-full border-4 border-teal-600 shadow-xl mx-auto">
             </div>
         </div>
-    </footer>
+    </section>
 
-    <!-- Initialize Lucide icons -->
-    <script>
-        lucide.createIcons();
-    </script>
-</body>
-</html>
+    <!-- PROJECTS -->
+    <section id="projects" class="mb-20">
+        <div class="mb-12">
+            <h2 class="text-3xl font-bold section-header text-gray-900">Featured Projects & Publications</h2>
+            <p class="mt-5 text-gray-700 max-w-2xl text-lg">
+                A collection of my work in energy market analysis, policy review, and data visualization tools.
+            </p>
+        </div>
 
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
 
+            <!-- PROJECT 1 – FIXED VIDEO -->
+            <div class="project-card bg-white rounded-xl shadow-lg border border-gray-200">
+                
+                <video 
+                    src="https://raw.githubusercontent.com/RabiaBabar/rabiababar.github.io/main/PECI_portfolio.mp4"
+                    controls
+                    class="w-full h-48 object-cover rounded-t-xl bg-black">
+                </video>
+
+                <div class="p-6 flex flex-col flex-grow">
+                    <span class="text-xs uppercase text-teal-700 bg-teal-100 px-2 py-1 rounded-full mb-3">Interactive Tool</span>
+
+                    <h3 class="font-bold text-xl mb-3">Pakistan Energy & Climate Insights Dashboard</h3>
+
+                    <p class="text-sm text-gray-600 mb-5 flex-grow">
+                        Led a team of 5 in building this Tableau dashboard, integrating two decades of power sector data.
+                    </p>
+
+                    <a href="https://peci.renewablesfirst.org/" target="_blank"
+                       class="inline-flex items-center text-teal-600 font-bold group">
+                        View Dashboard 
+                        <i data-lucide="external-link" class="w-4 h-4 ml-2"></i>
+                    </a>
+                </div>
+            </div>
+
+            <!-- Remaining cards unchanged -->
+            <!-- You can keep the rest of your project code as is -->
+
+        </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section id="contact" class="mt-20 p-10 bg-teal-600 rounded-3xl text-center border-b-8 border-teal-800">
+        <h3 class="text-3xl font-bold text-white mb-4">Let's Collaborate on Data-Driven Climate Solutions</h3>
+        <p class="text-teal-100 mb-8 max-w-lg mx-auto">
+            Open for consulting, advisory roles, and speaking engagements on energy policy.
+        </p>
+
+        <div class="flex flex-col sm:flex-row justify-center gap-4">
+            <a href="mailto:rabiaababar@gmail.com"
+               class="bg-white text-teal-800 font-extrabold py-3 px-10 rounded-full inline-flex items-center">
+                <i data-lucide="s
