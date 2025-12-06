@@ -4,30 +4,24 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Rabia Babar - Energy & Climate Portfolio</title>
-
-    <!-- Tailwind -->
     <script src="https://cdn.tailwindcss.com"></script>
-
-    <!-- Lucide Icons -->
     <script src="https://unpkg.com/lucide@latest"></script>
-
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800;900&display=swap" rel="stylesheet">
-
     <style>
         body {
             font-family: 'Inter', sans-serif;
             scroll-behavior: smooth;
-            background-color: #f4f4f5;
+            background-color: #f9fafb;
         }
         .project-card {
             display: flex;
             flex-direction: column;
+            overflow: hidden;
             transition: transform 0.3s, box-shadow 0.3s;
-            height: 100%;
         }
         .project-card:hover {
             transform: translateY(-5px);
-            box-shadow: 0 10px 20px rgba(20, 184, 166, 0.2), 0 4px 6px rgba(0, 0, 0, 0.05);
+            box-shadow: 0 10px 15px -3px rgba(0,0,0,0.1), 0 4px 6px -2px rgba(0,0,0,0.05);
         }
         .section-header {
             position: relative;
@@ -38,113 +32,109 @@
             position: absolute;
             left: 0;
             bottom: -5px;
-            width: 70px;
+            width: 60%;
             height: 4px;
-            background-color: #0d9488;
+            background-color: #3b82f6;
             border-radius: 9999px;
         }
     </style>
 </head>
-
 <body class="text-gray-900">
 
-<header class="bg-gray-900 shadow-xl sticky top-0 z-10 border-b border-teal-600">
-    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-4 flex justify-between items-center">
-        <h1 class="text-2xl font-extrabold text-white tracking-wide">Rabia Babar</h1>
-        <nav class="hidden sm:flex space-x-6">
-            <a href="#about" class="text-sm text-teal-300 hover:text-white">About</a>
-            <a href="#projects" class="text-sm text-teal-300 hover:text-white">Projects</a>
-            <a href="#contact" class="text-sm text-teal-300 hover:text-white">Contact</a>
-        </nav>
-        <div class="text-sm font-medium text-teal-400 uppercase tracking-wider hidden sm:block">
-            Data Storyteller
-        </div>
+<header class="bg-gray-900 shadow-lg sticky top-0 z-10 border-b border-gray-800">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-5 flex justify-between items-center">
+        <h1 class="text-3xl font-extrabold text-white tracking-tight">Rabia Babar</h1>
+        <div class="text-sm font-medium text-blue-300 uppercase tracking-wider">Energy & Climate Data Insights</div>
     </div>
 </header>
 
 <main class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
 
-    <!-- ABOUT -->
-    <section id="about" class="mb-20 bg-white p-8 sm:p-12 rounded-2xl shadow-lg border-t-4 border-teal-600">
-        <div class="md:flex md:items-center md:space-x-12">
-            <div class="md:w-3/4">
-                <h2 class="text-4xl sm:text-5xl font-extrabold text-gray-900 mb-6">
-                    Powering the <span class="text-teal-600">Energy Transition</span> with Data-Driven Insights.
-                </h2>
+<section id="projects" class="mb-20">
+    <div class="mb-12">
+        <h2 class="text-4xl font-bold section-header text-gray-900">Featured Projects & Publications</h2>
+        <p class="mt-4 text-gray-700 max-w-2xl text-lg">A collection of my work in energy market analysis, policy review, and data visualization.</p>
+    </div>
 
-                <p class="text-lg text-gray-700 mb-6">
-                    Energy sector professional with 15+ years of experience in data analytics, market analysis, and sustainable development.
-                </p>
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
 
-                <div class="flex flex-wrap gap-4">
-                    <a href="mailto:rabiaababar@gmail.com" class="inline-flex items-center bg-teal-600 text-white font-bold py-2 px-5 rounded-full">
-                        <i data-lucide="mail" class="w-4 h-4 mr-2"></i> Get in Touch
-                    </a>
-
-                    <a href="https://www.linkedin.com/in/rabiababar-datastoryteller/" target="_blank" class="inline-flex items-center border border-gray-300 py-2 px-5 rounded-full">
-                        <i data-lucide="linkedin" class="w-4 h-4 mr-2"></i> View LinkedIn
-                    </a>
-                </div>
-            </div>
-
-            <div class="hidden md:block md:w-1/4">
-                <img src="https://placehold.co/200x200/0d9488/ffffff?text=RB"
-                     class="w-48 h-48 rounded-full border-4 border-teal-600 shadow-xl mx-auto">
+        <!-- PECI Dashboard -->
+        <div class="project-card bg-white rounded-xl shadow-md border border-gray-200">
+            <video class="w-full h-48 object-cover rounded-t-xl" autoplay muted loop playsinline>
+    <source src="PECIport.mp4" type="video/mp4">
+</video>
+            <div class="p-6">
+                <span class="text-xs font-bold uppercase tracking-wider text-blue-700 bg-blue-100 px-2 py-1 rounded-full mb-3 inline-block">Interactive Tool</span>
+                <h3 class="font-bold text-xl mb-3 text-gray-900 leading-tight">Pakistan Energy & Climate Insights (PECI) Dashboard</h3>
+                <p class="text-gray-600 mb-5 text-sm leading-relaxed">Led a team of 5 in building this Tableau dashboard.</p>
+                <a href="https://public.tableau.com/app/profile/rabia.babar/viz/PECI-Dashboard" target="_blank" class="inline-flex items-center text-blue-600 font-bold hover:text-blue-700 group">View Dashboard <i data-lucide="arrow-right" class="w-4 h-4 ml-2 group-hover:translate-x-1"></i></a>
             </div>
         </div>
-    </section>
 
-    <!-- PROJECTS -->
-    <section id="projects" class="mb-20">
-        <div class="mb-12">
-            <h2 class="text-3xl font-bold section-header text-gray-900">Featured Projects & Publications</h2>
-            <p class="mt-5 text-gray-700 max-w-2xl text-lg">
-                A collection of my work in energy market analysis, policy review, and data visualization tools.
-            </p>
-        </div>
-
-        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-
-            <!-- PROJECT 1 – FIXED VIDEO -->
-            <div class="project-card bg-white rounded-xl shadow-lg border border-gray-200">
-                
-                <video 
-                    src="https://raw.githubusercontent.com/RabiaBabar/rabiababar.github.io/main/PECI_portfolio.mp4"
-                    controls
-                    class="w-full h-48 object-cover rounded-t-xl bg-black">
-                </video>
-
-                <div class="p-6 flex flex-col flex-grow">
-                    <span class="text-xs uppercase text-teal-700 bg-teal-100 px-2 py-1 rounded-full mb-3">Interactive Tool</span>
-
-                    <h3 class="font-bold text-xl mb-3">Pakistan Energy & Climate Insights Dashboard</h3>
-
-                    <p class="text-sm text-gray-600 mb-5 flex-grow">
-                        Led a team of 5 in building this Tableau dashboard, integrating two decades of power sector data.
-                    </p>
-
-                    <a href="https://peci.renewablesfirst.org/" target="_blank"
-                       class="inline-flex items-center text-teal-600 font-bold group">
-                        View Dashboard 
-                        <i data-lucide="external-link" class="w-4 h-4 ml-2"></i>
-                    </a>
-                </div>
+        <!-- Pakistan Electricity Review 2024 -->
+        <div class="project-card bg-white rounded-xl shadow-md border border-gray-200">
+            <video controls class="w-full h-48 object-cover rounded-t-xl">
+    <source src="https://github.com/RabiaBabar/rabiababar.github.io/raw/refs/heads/main/PECI_portfolio.mp4" type="video/mp4">
+    Your browser does not support the video tag.
+</video>
+            <div class="p-6">
+                <span class="text-xs font-bold uppercase tracking-wider text-blue-700 bg-blue-100 px-2 py-1 rounded-full mb-3 inline-block">Annual Report</span>
+                <h3 class="font-bold text-xl mb-3 text-gray-900 leading-tight">Pakistan Electricity Review 2024</h3>
+                <p class="text-gray-600 mb-5 text-sm leading-relaxed">Actionable insights for policymakers and stakeholders.</p>
+                <a href="https://renewablesfirst.global/pakistan-electricity-review-2024/" target="_blank" class="inline-flex items-center text-blue-600 font-bold hover:text-blue-700 group">Read Publication <i data-lucide="arrow-right" class="w-4 h-4 ml-2"></i></a>
             </div>
-
-            <!-- Remaining cards unchanged -->
-            <!-- You can keep the rest of your project code as is -->
-
         </div>
-    </section>
 
-    <!-- CONTACT -->
-    <section id="contact" class="mt-20 p-10 bg-teal-600 rounded-3xl text-center border-b-8 border-teal-800">
-        <h3 class="text-3xl font-bold text-white mb-4">Let's Collaborate on Data-Driven Climate Solutions</h3>
-        <p class="text-teal-100 mb-8 max-w-lg mx-auto">
-            Open for consulting, advisory roles, and speaking engagements on energy policy.
-        </p>
+        <!-- Pakistan Energy Market Review 2025 -->
+        <div class="project-card bg-white rounded-xl shadow-md border border-gray-200">
+            <img src="1755963608884.jpg" class="w-full h-48 object-cover rounded-t-xl" onerror="this.src='https://placehold.co/600x400/3b82f6/f9fafb?text=Market+Review'">
+            <div class="p-6">
+                <span class="text-xs font-bold uppercase tracking-wider text-blue-700 bg-blue-100 px-2 py-1 rounded-full mb-3 inline-block">Sector Analysis</span>
+                <h3 class="font-bold text-xl mb-3 text-gray-900 leading-tight">Pakistan Energy Market Review 2025</h3>
+                <p class="text-gray-600 mb-5 text-sm leading-relaxed">Fossil fuels, LNG, and energy market planning.</p>
+                <a href="https://renewablesfirst.global/pakistan-energy-market-review-2025/" target="_blank" class="inline-flex items-center text-blue-600 font-bold hover:text-blue-700 group">Read Publication <i data-lucide="arrow-right" class="w-4 h-4 ml-2"></i></a>
+            </div>
+        </div>
 
-        <div class="flex flex-col sm:flex-row justify-center gap-4">
-            <a href="mailto:rabiaababar@gmail.com"
-               class="bg-white text-teal-800 font-extrabold py-3 px-10 rounded-full inline-flex items-center">
-                <i data-lucide="s
+        <!-- Thar Coal vs Hydropower -->
+        <div class="project-card bg-white rounded-xl shadow-md border border-gray-200">
+            <img src="1695383198689.jpg" class="w-full h-48 object-cover rounded-t-xl" onerror="this.src='https://placehold.co/600x400/3b82f6/f9fafb?text=Coal+vs+Hydro'">
+            <div class="p-6">
+                <span class="text-xs font-bold uppercase tracking-wider text-blue-700 bg-blue-100 px-2 py-1 rounded-full mb-3 inline-block">LinkedIn Article</span>
+                <h3 class="font-bold text-xl mb-3 text-gray-900 leading-tight">Thar coal-fired energy cheaper than hydropower?</h3>
+                <p class="text-gray-600 mb-5 text-sm leading-relaxed">Comparative cost analysis.</p>
+                <a href="https://www.linkedin.com/posts/rabia-babar_energy-tharcoal-hydropower-activity" target="_blank" class="inline-flex items-center text-blue-600 font-bold hover:text-blue-700 group">Read Article <i data-lucide="arrow-right" class="w-4 h-4 ml-2"></i></a>
+            </div>
+        </div>
+
+        <!-- Capacity Payments Article -->
+        <div class="project-card bg-white rounded-xl shadow-md border border-gray-200">
+            <img src="1757489890241.jpg" class="w-full h-48 object-cover rounded-t-xl" onerror="this.src='https://placehold.co/600x400/3b82f6/f9fafb?text=Capacity+Payments'">
+            <div class="p-6">
+                <span class="text-xs font-bold uppercase tracking-wider text-blue-700 bg-blue-100 px-2 py-1 rounded-full mb-3 inline-block">Data Analysis</span>
+                <h3 class="font-bold text-xl mb-3 text-gray-900 leading-tight">Are the capacity payments the primary reason for swelling electricity prices?</h3>
+                <p class="text-gray-600 mb-5 text-sm leading-relaxed">Detailed tariff investigation.</p>
+                <a href="https://www.linkedin.com/posts/rabia-babar_capacitypayments-energyprices-analysis" target="_blank" class="inline-flex items-center text-blue-600 font-bold hover:text-blue-700 group">Read Article <i data-lucide="arrow-right" class="w-4 h-4 ml-2"></i></a>
+            </div>
+        </div>
+
+        <!-- Great Solar Rush Article -->
+        <div class="project-card bg-white rounded-xl shadow-md border border-gray-200">
+            <img src="Gemini_Generated_Image_2u6zbs2u6zbs2u6z.jpg" class="w-full h-48 object-cover rounded-t-xl" onerror="this.src='https://placehold.co/600x400/3b82f6/f9fafb?text=Solar+Rush'">
+            <div class="p-6">
+                <span class="text-xs font-bold uppercase tracking-wider text-blue-700 bg-blue-100 px-2 py-1 rounded-full mb-3 inline-block">Sector Insight</span>
+                <h3 class="font-bold text-xl mb-3 text-gray-900 leading-tight">The great solar rush in Pakistan</h3>
+                <p class="text-gray-600 mb-5 text-sm leading-relaxed">Market transformation and adoption trends.</p>
+                <a href="https://renewablesfirst.global/the-great-solar-rush/" target="_blank" class="inline-flex items-center text-blue-600 font-bold hover:text-blue-700 group">Read Article <i data-lucide="arrow-right" class="w-4 h-4 ml-2"></i></a>
+            </div>
+        </div>
+
+    </div>
+</section>
+
+<section class="mt-20 p-10 bg-gray-100 rounded-2xl text-center border border-gray-200 shadow-sm">
+    <h3 class="text-2xl font-bold text-gray-900 mb-4">Interested in collaboration or analysis?</h3>
+    <p class="text-gray-700 mb-8 max-w-lg mx-auto">Open for data-driven consulting in the energy sector.</p>
+    <div class="flex flex-col sm:flex-row justify-center items-center gap-4">
+        <a href="mailto:rabiaababar@gmail.com" class="bg-blue-600 hover:bg-blue-700 text-white font-bold py-3 px-8 rounded-full shadow-lg ring-4 ring-blue-300 inline-flex items-center"><i data-lucide="mail" class="w-5 h-5 mr-3"></i> Contact Rabia</a>
+        <a href="https://www.linkedin.com/in/rabiababar/" target="_blank" class="text-gray-700 hover:text-gray-900 font-semibold py-3 px-6 rounded-full border border-gray-300 hover:bg-gray-200 inline-flex items-center"><i data-lucide="linkedin" class="w-5 h-
