@@ -115,16 +115,19 @@
 
             <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
 
-                <!-- Project 1: PECI Dashboard (FIXED: Using a proper <video> element for the MP4) -->
+                <!-- Project 1: PECI Dashboard (Background changed to bg-teal-600 to match placeholders) -->
                 <div class="project-card bg-white rounded-xl shadow-lg border border-gray-200">
-                    <!-- Correct structure for video embedding -->
-                    <video controls muted loop preload="none" 
-                           poster="https://placehold.co/600x337/0d9488/f9fafb?text=PECI+Dashboard+Video+Preview"
-                           class="w-full h-48 object-cover rounded-t-xl">
-                        <source src="https://raw.githubusercontent.com/RabiaBabar/rabiababar.github.io/main/PECI_portfolio.mp4" type="video/mp4">
-                        <!-- Fallback content if video is not supported -->
-                        <p class="p-4 text-center text-gray-500">Video not supported. Preview image below.</p>
-                    </video>
+                    
+                    <!-- Container for the video - set background to TEAL-600 to fill the letterbox space -->
+                    <div class="bg-teal-600 rounded-t-xl overflow-hidden">
+                        <video autoplay controls muted loop preload="none" 
+                            poster="https://placehold.co/600x337/0d9488/f9fafb?text=PECI+Dashboard+Video+Preview"
+                            class="w-full aspect-video">
+                            <source src="https://raw.githubusercontent.com/RabiaBabar/rabiababar.github.io/main/PECI_portfolio.mp4" type="video/mp4">
+                            <!-- Fallback content if video is not supported -->
+                            <p class="p-4 text-center text-gray-500">Video not supported. Preview image below.</p>
+                        </video>
+                    </div>
 
                     <div class="p-6 flex flex-col flex-grow">
                         <span class="text-xs font-bold uppercase tracking-wider text-teal-700 bg-teal-100 px-2 py-1 rounded-full mb-3 inline-block self-start">Interactive Tool</span>
